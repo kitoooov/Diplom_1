@@ -1,11 +1,50 @@
-# игнорим всё в target
+# ======================
+# Java / Maven / Gradle
+# ======================
+target/
+build/
+out/
+
+*.class
+
+# Maven wrapper logs
+.mvn/timing.properties
+
+# ======================
+# IntelliJ IDEA
+# ======================
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Logs
+# ======================
+*.log
+
+# ======================
+# JaCoCo (ВАЖНО)
+# оставляем отчет, но не мусор сборки
+# игнорим весь build
+
 target/*
-
-# но разрешаем папку site
+# ======================
 !target/site/
-
-# разрешаем jacoco
+#
 !target/site/jacoco/
+#
+!target/site/jacoco/**
 
-# и всё внутри неё
-!target/site/jacoco/**coco/**
+# ======================
+# Eclipse (если вдруг)
+# ======================
+.project
+.classpath
+.settings/
