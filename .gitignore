@@ -1,50 +1,49 @@
 # ======================
-# Java / Maven / Gradle
+
+# Build output
+
 # ======================
-target/
+
+target/*
+
 build/
+
 out/
 
-*.class
-
-# Maven wrapper logs
-.mvn/timing.properties
-
 # ======================
+
 # IntelliJ IDEA
+
 # ======================
+
 .idea/
-*.iws
+
 *.iml
-*.ipr
 
 # ======================
-# OS files
+
+# OS
+
 # ======================
+
 .DS_Store
-Thumbs.db
 
 # ======================
+
 # Logs
+
 # ======================
+
 *.log
 
 # ======================
-# JaCoCo (ВАЖНО)
-# оставляем отчет, но не мусор сборки
-# игнорим весь build
 
-target/*
+# JaCoCo (РАЗРЕШАЕМ ОТЧЁТ)
+
 # ======================
+
 !target/site/
-#
-!target/site/jacoco/
-#
-!target/site/jacoco/**
 
-# ======================
-# Eclipse (если вдруг)
-# ======================
-.project
-.classpath
-.settings/
+!target/site/jacoco/
+
+!target/site/jacoco/**
