@@ -1,0 +1,11 @@
+# игнорим всё в target
+target/*
+
+# но разрешаем папку site
+!target/site/
+
+# разрешаем jacoco
+!target/site/jacoco/
+
+# и всё внутри неё
+!target/site/jacoco/**coco/**
